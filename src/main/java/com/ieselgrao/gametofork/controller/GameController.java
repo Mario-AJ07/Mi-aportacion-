@@ -29,8 +29,13 @@ public class GameController {
     // Parámetros de los círculos
     private final double MIN_RADIUS = 10;
     private final double MAX_RADIUS = 30;
-    private final double FALL_SPEED = 1;
     private final double LOST_LINE_Y = 550; // Línea cerca del pie de la ventana (600px)
+
+    private double fallSpeed = 0.001; // Velocidad inicial
+    private final double SPEED_INCREMENT = 0.004; // Cuánto aumenta por segundo
+    private final double MAX_SPEED = 7; // Velocidad máxima
+    private long startTime; // Momento en que empieza el juego
+
 
     @FXML
     public void initialize() {
@@ -51,12 +56,16 @@ public class GameController {
     }
 
     private void startGameLoop() {
+        startTime = System.nanoTime();// 🔹 Guardamos el tiempo de inicio
+
         gameLoop = new AnimationTimer() {
             private long lastSpawnTime = 0;
             private final long SPAWN_INTERVAL_NS = 1_000_000_000L; // Spawn cada 1 segundo
 
             @Override
             public void handle(long now) {
+                double elapsedSeconds = (now - startTime) / 1_000_000_000.0;
+                fallSpeed = Math.min(0.1 + SPEED_INCREMENT * elapsedSeconds, MAX_SPEED);
                 // Generar nuevos círculos
                 if (now - lastSpawnTime > SPAWN_INTERVAL_NS) {
                     createRandomCircle();
@@ -109,7 +118,7 @@ public class GameController {
             javafx.scene.Node node = iterator.next();
             if (node instanceof Circle circle) {
                 // Mover el círculo
-                circle.setLayoutY(circle.getLayoutY() + FALL_SPEED);
+                circle.setLayoutY(circle.getLayoutY() + fallSpeed);
 
                 // Comprobar si ha rebasado la línea de pérdida de vida
                 if (circle.getLayoutY() > LOST_LINE_Y) {
