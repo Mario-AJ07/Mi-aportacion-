@@ -15,7 +15,7 @@ He modificado el juego para que los círculos aumenten progresivamente su veloci
 # Proceso de creación del Fork
 
 1. Realicé un **fork** del repositorio original [A-Game-to-Fork](https://github.com/alvaro-ruizg/A-Game-to-Fork).
-2. Cloné mi fork localmente:
+2. Cloné mi fork localmente:<br>
    <img width="642" height="159" alt="GitClone" src="https://github.com/user-attachments/assets/6b2f8b3c-eec2-4fc3-a4b3-8443881206bd" />
 3.
 
