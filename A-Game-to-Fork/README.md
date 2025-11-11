@@ -23,9 +23,10 @@ He modificado el juego para que los círculos aumenten progresivamente su veloci
 5. Hice el commit<br>
    <img width="642" height="144" alt="GitStatus" src="https://github.com/user-attachments/assets/92674905-ad00-48d7-98a6-10bc0ad9431b" />
 6. Fusione la rama "mejoras" creada por mi con la rama main<br>
-   <img width="643" height="394" alt="GitPush" src="https://github.com/user-attachments/assets/236920c1-652a-4914-a2fd-19a6cdf9d969" />
-   <img width="650" height="311" alt="Captura de pantalla -2025-11-07 19-37-45" src="https://github.com/user-attachments/assets/608ba907-bb40-42e2-9eab-           aff6bb6878b1" />
+   <img width="643" height="394" alt="GitPush" src="https://github.com/user-attachments/assets/236920c1-652a-4914-a2fd-19a6cdf9d969" /><br>
+   <img width="650" height="311" alt="CImprobacionCommit" src="https://github.com/user-attachments/assets/df315fcc-c8bd-4116-8099-381800112f0d" />
 
+   
 PD: Este trabajo no podia haber sido realizado sin la inestimable ayuda de mi colaborador ChatGPT que tabajo con este prompt:
    "hazme un codigo para u njuego que añada un aumento progresivo de la velocidad"
 
