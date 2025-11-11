@@ -18,3 +18,4 @@ He modificado el juego para que los círculos aumenten progresivamente su veloci
 2. Cloné mi fork localmente: <img width="642" height="159" alt="GitClone" src="https://github.com/user-attachments/assets/6b2f8b3c-eec2-4fc3-a4b3-8443881206bd" />
 
 
+
